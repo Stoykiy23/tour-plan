@@ -50,18 +50,20 @@
 @media (min-width: 320px) and (max-width: 480px)
   .conteiner
     width: 90%
+  .navbar-bottom
+    padding-top: 31px
+    padding-bottom: 68px
   .navbar
     display: flex
     flex-direction: column
     text-align: center
     &-menu
+      padding: 0
       background: $dark
       display: flex
       flex-direction: column
       align-items: center
       justify-content: space-between
-      padding-top: 32px
-      padding-bottom: 68px
       &__adaptive
         display: flex
         flex-direction: column
@@ -69,25 +71,32 @@
         justify-content: space-between
         align-items: center
         margin-bottom: 39px
-        &__input
-          width: 245px
-          height: 40px
+        &__user
+          display: flex
+          flex-direction: column
+          text-align: center
+          margin-bottom: 27px
+      &__input
+        width: 245px
+        height: 40px
       &__link
         font-size: 12px
         line-height: 15px
       &__item
         margin-bottom: 20px
-      .user
-        display: flex
-        flex-direction: column
-        text-align: center
-        margin-bottom: 27px
-        &__avatar
-          margin-bottom: 10px
-        &__name
-          color: $lite
-          margin-left: 0
-      .search
-        &__input
-          width: 245px
-          height: 40px
+  .adaptive
+    &__user
+      display: flex
+      flex-direction: column
+      text-align: center
+      margin-bottom: 27px
+  .user
+    &__avatar
+      margin-bottom: 10px
+    &__name
+      color: $lite
+      margin-left: 0
+  .search
+    &__input
+      width: 245px
+      height: 40px
