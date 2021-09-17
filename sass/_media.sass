@@ -47,3 +47,47 @@
 @media (max-width:576px)
   .logo
     width: 99px
+@media (min-width: 320px) and (max-width: 480px)
+  .conteiner
+    width: 90%
+  .navbar
+    display: flex
+    flex-direction: column
+    text-align: center
+    &-menu
+      background: $dark
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      padding-top: 32px
+      padding-bottom: 68px
+      &__adaptive
+        display: flex
+        flex-direction: column
+        height: 130px
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 39px
+        &__input
+          width: 245px
+          height: 40px
+      &__link
+        font-size: 12px
+        line-height: 15px
+      &__item
+        margin-bottom: 20px
+      .user
+        display: flex
+        flex-direction: column
+        text-align: center
+        margin-bottom: 27px
+        &__avatar
+          margin-bottom: 10px
+        &__name
+          color: $lite
+          margin-left: 0
+      .search
+        &__input
+          width: 245px
+          height: 40px
