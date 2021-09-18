@@ -44,15 +44,36 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .stars
+    flex-basis: auto
+  .hotel
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+        margin-bottom: 0
+      &__rating
+        display: none
+      &__offer
+        // Что бы оффер улетел на верх, прописываем ему ордер минус 1
+        order: -1
+        margin-left: 0
+
 @media (max-width:576px)
   .logo
     width: 99px
 @media (min-width: 320px) and (max-width: 480px)
   .conteiner
     width: 90%
-  .navbar-bottom
-    padding-top: 31px
-    padding-bottom: 68px
+  .navbar
+    &-bottom
+      padding-top: 31px
+      padding-bottom: 68px
   .navbar
     display: flex
     flex-direction: column
