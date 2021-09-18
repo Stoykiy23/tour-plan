@@ -365,6 +365,10 @@ template {
   background-color: #ffffff;
 }
 
+.navbar-adaptive {
+  display: none;
+}
+
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,10 +381,6 @@ template {
           justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 40px;
-}
-
-.navbar-top__menu-button {
-  display: none;
 }
 
 .navbar__search {
@@ -406,10 +406,6 @@ template {
   padding: 31px 0;
   margin: 0;
   color: #fff;
-}
-
-.navbar-menu__adaptive {
-  display: none;
 }
 
 .navbar-menu__link {
@@ -705,6 +701,21 @@ template {
     padding-top: 31px;
     padding-bottom: 68px;
   }
+  .navbar-bottom__user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+  .navbar-bottom__input {
+    width: 245px;
+    height: 40px;
+  }
   .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -732,7 +743,14 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .navbar-menu__adaptive {
+  .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-adaptive {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -749,49 +767,19 @@ template {
             align-items: center;
     margin-bottom: 39px;
   }
-  .navbar-menu__adaptive__user {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    margin-bottom: 27px;
-  }
-  .navbar-menu__input {
-    width: 245px;
-    height: 40px;
-  }
-  .navbar-menu__link {
-    font-size: 12px;
-    line-height: 15px;
-  }
-  .navbar-menu__item {
-    margin-bottom: 20px;
-  }
-  .adaptive__user {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    margin-bottom: 27px;
-  }
-  .user__avatar {
+  .navbar .user__avatar {
     margin-bottom: 10px;
   }
-  .user__name {
+  .navbar .user__name {
     color: #fff;
     margin-left: 0;
   }
-  .search__input {
+  .navbar .search__input {
     width: 245px;
     height: 40px;
+  }
+  .hotel, .breadcrumb {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

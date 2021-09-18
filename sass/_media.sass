@@ -67,6 +67,7 @@
 @media (max-width:576px)
   .logo
     width: 99px
+
 @media (min-width: 320px) and (max-width: 480px)
   .conteiner
     width: 90%
@@ -74,6 +75,14 @@
     &-bottom
       padding-top: 31px
       padding-bottom: 68px
+      &__user
+        display: flex
+        flex-direction: column
+        text-align: center
+        margin-bottom: 27px
+      &__input
+        width: 245px
+        height: 40px
   .navbar
     display: flex
     flex-direction: column
@@ -85,39 +94,27 @@
       flex-direction: column
       align-items: center
       justify-content: space-between
-      &__adaptive
-        display: flex
-        flex-direction: column
-        height: 130px
-        justify-content: space-between
-        align-items: center
-        margin-bottom: 39px
-        &__user
-          display: flex
-          flex-direction: column
-          text-align: center
-          margin-bottom: 27px
-      &__input
-        width: 245px
-        height: 40px
       &__link
         font-size: 12px
         line-height: 15px
       &__item
         margin-bottom: 20px
-  .adaptive
-    &__user
+    &-adaptive
       display: flex
       flex-direction: column
-      text-align: center
-      margin-bottom: 27px
-  .user
-    &__avatar
-      margin-bottom: 10px
-    &__name
-      color: $lite
-      margin-left: 0
-  .search
-    &__input
-      width: 245px
-      height: 40px
+      height: 130px
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 39px
+    .user
+      &__avatar
+        margin-bottom: 10px
+      &__name
+        color: $lite
+        margin-left: 0
+    .search
+      &__input
+        width: 245px
+        height: 40px
+  .hotel,.breadcrumb
+    display: none
