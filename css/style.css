@@ -632,12 +632,12 @@ template {
   background-color: transparent;
 }
 
-.slider-button__next {
+.slider-button--next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
 }
 
-.slider-button__prev {
+.slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
 }
