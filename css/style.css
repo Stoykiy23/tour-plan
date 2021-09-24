@@ -795,6 +795,14 @@ template {
   line-height: 19px;
 }
 
+.booking__map {
+  width: 100%;
+}
+
+#map-hotel {
+  width: 100%;
+}
+
 .map {
   width: 347px;
   height: 213px;
