@@ -12,6 +12,10 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
+
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -67,6 +71,39 @@
   .card
     width: 339px
     height: 255px
+  .footer
+    &-wrapper
+      grid-row-gap: 40px
+      grid-template-columns: repeat(6, 1fr)
+    &__input
+      flex-basis: 49%
+    &__logo
+      width: 104px
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
+    &-bottom
+      grid-column: 1 / 7
+      grid-row: 6 / 7
+      align-self: self-end
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -108,7 +145,6 @@
         // Что бы оффер улетел на верх, прописываем ему ордер минус 1
         order: -1
         margin-left: 0
-
   .hotel
     &-right
       flex-direction: column
@@ -154,7 +190,9 @@
   .card
     width: 48%
     height: 255px
-
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width:576px)
   .logo
     width: 99px
@@ -167,7 +205,7 @@
     padding: 76px 0 83px 0
     &__title
       margin-bottom: 37px
-  .subskripe
+  .subscribe
     width: 100%
   .reviews
     &-slider
@@ -175,7 +213,44 @@
         padding: 0 29px 36px 33px
   .card
     width: 100%
-
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &-wrapper
+      grid-template-columns: 1fr
+    &-bottom
+      grid-row: 8
+      grid-column: 1
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+  .bottom
+    &-wrapper
+      flex-direction: column
+    &__payment
+      margin-left: -4px
+      margin-top: 10px
+      max-width: 136px
 @media (min-width: 320px) and (max-width: 480px)
   .conteiner
     width: 90%
@@ -224,5 +299,5 @@
       &__input
         width: 245px
         height: 40px
-  .hotel,.breadcrumb, .newsletter, .reviews, .activities
+  .hotel,.breadcrumb, .newsletter, .reviews, .activities, .footer
     display: none
