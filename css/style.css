@@ -1738,7 +1738,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .bottom__payment {
+  .bottom-wrapper__payment {
     margin-left: -4px;
     margin-top: 10px;
     max-width: 136px;
