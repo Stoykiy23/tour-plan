@@ -213,11 +213,11 @@
         top: 32px
         &--prev
           left: 50%
-          margin-left: -65px
+          margin-left: -85px
           transform: translate(-50%, 0)
         &--next
           right: 50%
-          margin-right: -65px
+          margin-right: -85px
           transform: translate(50%, 0)
     &__title
       font-style: normal
@@ -263,7 +263,6 @@
     &-bottom
       grid-row: 8
       grid-column: 1
-
     &__logo
       grid-row: 1
       grid-column: 1
@@ -287,6 +286,9 @@
       &-form
         grid-row: 7
         grid-column: 1
+    &__down
+      grid-column: 2
+
   .bottom
     &-wrapper
       flex-direction: column
@@ -298,6 +300,8 @@
 @media (min-width: 320px) and (max-width: 480px)
   .conteiner
     width: 90%
+  .logo
+    width: 99px
   .navbar
     &-bottom
       padding-top: 31px
@@ -345,3 +349,20 @@
         height: 40px
   // .hotel,.breadcrumb, .newsletter, .reviews, .activities, .foote
   //   display: none
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &-wrapper
+      grid-template-columns: 100%
+    &__social
+      &-network
+        flex-direction: column
+    &__title
+      &--inline
+        margin-bottom: 20px
+    &__down
+      align-items: flex-start
+      flex-direction: column
+    &__info
+      order: -1
+      margin-bottom: 15px
