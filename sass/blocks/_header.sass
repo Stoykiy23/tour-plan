@@ -1,8 +1,8 @@
 // Когда ставим амперсант & мы получаем класс header-top и так далее
 .navbar
   background-color: #ffffff
-  &-adaptive
-    display: none
+  // &-adaptive
+  //   display: none
   &-top
     display: flex
     align-items: center
@@ -23,14 +23,19 @@
     padding: 31px 0
     margin: 0
     color: $lite
-
     &__link
       text-decoration: none
       color: inherit
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
-
+    &__item
+      &--mobile
+        &--visible
+          display: none
+.menu
+  &-button
+    display: none
 .logo
   width: 177px
     // Если что то будет вываливаться за пределы блока searche мы будем это крывать с помощью overflow: hidden
