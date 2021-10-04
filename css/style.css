@@ -37,7 +37,7 @@ img {
 
 .button {
   min-width: 160px;
-  minh: 50px;
+  min-height: 50px;
   padding: 18px;
   font-style: normal;
   font-weight: bold;
@@ -1623,6 +1623,13 @@ template {
     -ms-flex-item-align: self-end;
         -ms-grid-row-align: self-end;
         align-self: self-end;
+  }
+  .modal__dialog {
+    width: 90%;
+    padding: 33px 65px;
+  }
+  .modal__button {
+    padding: 18px 30px;
   }
 }
 
