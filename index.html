@@ -8,6 +8,7 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,11 +21,11 @@
             <!-- Создаем блок для элементов шапки,Сначала верхнюю часть шапки для флексового разброса -->
             <div class="navbar-top">
                 <!-- Создаем логтип через ссылку и начинается БЭМ -->
-                <a href="#" class="logo">
+                <a href="#" class="logo" div data-aos="fade-right" data-aos-delay="200">
                     <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
                 </a>
                 <!-- Далее юлок с поисковой строкой, обычно он начинается с формы, так как в нем есть атрибут инпут -->
-                <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+                <form div data-aos="fade-up" data-aos-delay="400" action="#" class="search navbar__search navbar__search--mobile--hidden">
                     <!-- Внутри будут два элемента -->
                     <input type="text" placeholder="Search Location" class="search__input">
                     <button class="search__button">
@@ -32,7 +33,7 @@
           </button>
                 </form>
                 <!-- Далее идет блок юзер, который тоже сотоит из двух элементов -->
-                <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+                <a href="#" class="user navbar__user navbar__user--mobile--hidden" div data-aos="fade-left" data-aos-delay="600">
                     <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
                     <span class="user__name">Nathan</span>
                 </a>
@@ -225,11 +226,11 @@
     <!-- /.hotel -->
     <section class="newsletter">
         <div class="newsletter-wrapper">
-            <h2 class="newsletter-title newsletter__title">
+            <h2 class="newsletter-title newsletter__title" div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800">
                 subscribe to our
                 <span class="newsletter__strong">Newsletter</span>
             </h2>
-            <form action="#" class="form subscribe newsletter__subscribe">
+            <form div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="800" action="#" class="form subscribe newsletter__subscribe">
                 <!-- Внутри будут два элемента -->
                 <input type="email" placeholder="Your email address" class="subscribe__input" required>
                 <button class="subscribe__button">Send</button>
@@ -336,14 +337,14 @@
         <div class="container">
             <h2 class="activities__title">Other Activities</h2>
             <div class="activities-wrapper">
-                <div class="card activities__card">
+                <div class="card activities__card" div data-aos="fade-right" data-aos-delay="100">
                     <img src="img/activity-1.jpg" alt="The curious corner
           of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner of chamarel</h3>
                     <button class="card__button">Book Now</button>
                 </div>
                 <!-- Card -->
-                <div class="card activities__card">
+                <div class="card activities__card" div data-aos="fade-down" data-aos-delay="400">
                     <img src="img/activity-2.jpg" alt="Gymkhana club golf
           course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf course
@@ -351,14 +352,14 @@
                     <button class="card__button">Book Now</button>
                 </div>
                 <!-- Card -->
-                <div class="card activities__card">
+                <div class="card activities__card" div data-aos="fade-up" data-aos-delay="600">
                     <img src="img/activity-3.jpg" alt="Tamarind falls hiking
           trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
                     <button class="card__button">Book Now</button>
                 </div>
                 <!-- Card -->
-                <div class="card activities__card">
+                <div class="card activities__card" div data-aos="fade-left" data-aos-delay="800">
                     <img src="img/activity-4.jpg" alt="The blue marine discovery
           quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest
@@ -548,6 +549,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 
