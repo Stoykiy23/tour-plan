@@ -15,6 +15,7 @@
     margin-left: 108px
   &-bottom
     background-color: $dark
+
   &-menu
     display: flex
     align-items: center
@@ -29,6 +30,15 @@
       text-transform: uppercase
       font-size: 14px
       line-height: 18px
+      &:after
+        content: ''
+        display: block
+        width: 0
+        height: 2px
+        background: $lite
+        transition: width .7s
+      &:hover:after
+        width: 100%
     &__item
       &--mobile
         &--visible
@@ -36,8 +46,19 @@
 .menu
   &-button
     display: none
+
 .logo
   width: 177px
+  &:after
+    content: ''
+    display: block
+    width: 0
+    height: 2px
+    background: $primary
+    transition: width .7s
+  &:hover:after
+    width: 100%
+
     // Если что то будет вываливаться за пределы блока searche мы будем это крывать с помощью overflow: hidden
 .search
   display: flex
@@ -64,6 +85,10 @@
     background-color: $primary
     border-radius: 0px 6px 6px 0px
     border: none
+    cursor: pointer
+    &:hover
+      color: $lite
+      opacity: 0.5
     // С помощью object-fit: cover мы делаем так что б в аватарке все что не входимт в круг обрезалось
 .user
   display: flex
@@ -74,6 +99,7 @@
     height: 40px
     border-radius: 50%
     object-fit: cover
+
   &__name
     font-size: 14px
     line-height: 18px

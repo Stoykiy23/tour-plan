@@ -25,6 +25,8 @@
   .logo
     &__image
       width: 132px
+    &:after
+      display: none
   .navbar
     &-top
       padding-top: 30px
@@ -37,9 +39,15 @@
       &__link
         font-size: 12px
         line-height: 15px
+        &:after
+          display: none
   .search
     &__input
       width: 340px
+    &__button
+      &:hover
+        color: $lite
+        opacity: 1
   .hotel
     &-grid
       flex-direction: column
@@ -51,8 +59,17 @@
       width: 100%
   .booking
     width: 340px
+    &__button
+      &:hover
+        color: $lite
+        opacity: 1
   .map
     width: 340px
+  .subscribe
+    &__button
+      &:hover
+        color: $lite
+        opacity: 1
   .reviews
     &-slider
       &__item
@@ -73,6 +90,11 @@
   .card
     width: 339px
     height: 255px
+    &__button
+      &:hover
+        color: $lite
+        opacity: 1
+
   .footer
     &-wrapper
       grid-row-gap: 40px
@@ -103,6 +125,10 @@
       &-form
         grid-column: span 5
         grid-row: 4
+    &__button
+      &:hover
+        color: $lite
+        opacity: 1
     &-bottom
       grid-column: 1 / 7
       grid-row: 6 / 7
@@ -112,7 +138,9 @@
       width: 90%
       padding: 33px 65px
     &__button
-      paddin
+      &:hover
+        color: $lite
+        opacity: 1
 
 @media (max-width: 768px)
   .container
