@@ -22,11 +22,11 @@
             <!-- Создаем блок для элементов шапки,Сначала верхнюю часть шапки для флексового разброса -->
             <div class="navbar-top">
                 <!-- Создаем логтип через ссылку и начинается БЭМ -->
-                <a href="/index.html" class="logo">
+                <a href="/index.html" class="logo" data-aos="fade-right" data-aos-delay="200">
                     <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
                 </a>
                 <!-- Далее юлок с поисковой строкой, обычно он начинается с формы, так как в нем есть атрибут инпут -->
-                <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+                <form data-aos="fade-up" data-aos-delay="400" action="#" class="search navbar__search navbar__search--mobile--hidden">
                     <!-- Внутри будут два элемента -->
                     <input type="text" placeholder="Search Location" class="search__input">
                     <button class="search__button">
@@ -34,7 +34,7 @@
           </button>
                 </form>
                 <!-- Далее идет блок юзер, который тоже сотоит из двух элементов -->
-                <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+                <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-left" data-aos-delay="600">
                     <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
                     <span class="user__name">Nathan</span>
                 </a>
@@ -242,15 +242,15 @@
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
-                                <img class="footer__icon" src="img/contact-phone-call.svg" alt="Icon: conact phone">
+                                <a class="footer__icon" href="tel:2691500"><img src="img/contact-phone-call.svg" alt="Icon: conact phone"></a>
                             </div>
                             <a class="footer__phone" href="tel:2691500">Tel (business hours) : 269 1500 <br> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br> Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a>
                         </li>
                         <li class="footer__item footer__item--mb-2">
                             <div class="footer__icon-wrapper">
-                                <img class="footer__icon" src="img/email.svg" alt="Icon: email">
+                                <a class="footer__icon" href="mailto:cherly.lawson@example.com"><img src="img/email.svg" alt="Icon: email"></a>
                             </div>
-                            cherly.lawson@example.com
+                            <a class="footer__mail" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
