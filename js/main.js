@@ -63,6 +63,7 @@ $(document).ready(function() {
                 },
                 phone: {
                     required: "Phone is required",
+
                 },
             },
         });
